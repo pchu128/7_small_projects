@@ -1,0 +1,416 @@
+/*************************** 
+global setting 
+****************************/
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600,700,800|Roboto|Saira+Extra+Condensed:400,500,600,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%; /* 符合題目, 區塊需占滿視窗高度 */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #868e96;
+  background-color: #fff;
+  font-family: Muli, -apple-system,BlinkMacSystemFont, 'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  border-bottom: 1px solid rgb(230, 230, 230);  /* 水平線 */
+}
+
+h2 {
+  color: #070816;
+  font-size: 60px;
+}
+
+h3 {
+  color: #070816;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  color: #070816;
+  font-size: 26px;
+}
+
+h5 {
+  color: #0A50EB;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*************************** 
+aside nav
+****************************/
+
+#nav {
+  background-color: #0A50EB;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#avatar {
+  display: flex;
+  flex-direction: row nowrap;
+  margin: auto;
+}
+
+#avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 0 0 5px rgb(67, 119, 239);  /* 淺藍外框 */
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+#name span {
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.AC {
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+#name emailAddress {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  }
+
+#link-about, #link-exp, #link-skills {
+  margin: 20px;
+}
+
+ul.menu a {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.4);
+  line-height: 35px;
+  font-weight: 800;
+}
+
+ul.menu a:hover {
+  color: white;
+}
+
+/* 被 JS 控制的 class 開關的項目  */
+/* 隨視窗滾動, menu 連結會高亮 */
+.menu .link-about,
+.menu .link-exp,
+.menu .link-skills {
+  color: white;
+}
+
+/*************************** 
+about
+****************************/
+
+#about {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#about p {
+  margin: 20px 0px 30px 0px;
+}
+
+.sns_icon li {
+  display: inline-block; 
+}
+
+.sns_icon a {
+  display: inline-block;
+  color: white;
+  background-color: rgb(73, 81, 87);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;  /* 垂直置中 */
+  margin-right: 10px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+/*************************** 
+experience
+****************************/
+
+#experience {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.date {
+  font-size: 14px;
+  color: #0A50EB;
+  text-transform: capitalize;
+}
+
+/*************************** 
+skills
+****************************/
+
+#skills {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.skills-icon {
+  margin-bottom: 10px;
+}
+
+.skills-icon li {
+  display: inline-block;
+  font-size: 45px;
+  margin-right: 15px;
+}
+
+/* RWD */
+
+@media screen and (min-width: 576px) {
+
+/*************************** 
+NAV
+****************************/
+  
+  #avatar {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  #avatar img{
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+  }
+  
+  .AC {
+    font-size: 3.5em;
+  }
+  
+  #name span {
+    font-size: 1em;
+  }
+  
+  #name {
+    font-size: 1.1em;
+  }
+  
+  #link-about, #link-exp, #link-skills {
+  margin: 80px;
+  }
+  
+/*************************** 
+About
+****************************/
+  
+  #about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  #about h3 {
+    flex-basis: 26%;
+    text-align: right;
+    margin-right: 4%;
+  }
+  
+  #about p {
+    flex-basis: 65%;
+    margin-right: 5%;
+  }
+  
+  .sns_icon {
+    margin-left: 30%;
+    flex-basis: 70%;
+  }
+  
+/*************************** 
+Experience
+****************************/
+  
+  #experience {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    }
+  
+  #experience h3 {
+    flex-basis: 25%;
+    text-align: right;
+    margin-right: 2%;
+  }
+  
+  #experience div {
+    flex-basis: 65%;
+    margin-right: 5%;
+  }
+  
+/*************************** 
+Experience
+****************************/
+  
+  #skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  #skills h3 {
+    flex-basis: 26%;
+    text-align: right;
+    margin-right: 4%;
+  }
+  
+  #skills h5, div {
+    flex-basis: 65%;
+    margin-right: 5%;
+  }
+  
+  #skills .skills-icon {
+    margin-top: -60px;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  
+/*************************** 
+NAV
+****************************/
+  
+  body {
+    flex-flow: row wrap;
+  }
+  
+  #nav {
+    flex-basis: 100%;
+  }
+  
+  #avatar {
+  display: flex;
+  flex-direction: row nowrap;
+  margin-left: 20px;
+  }
+  
+  #link-about, #link-exp, #link-skills {
+  margin: 80px;
+  }
+  
+/*************************** 
+About
+****************************/
+  
+  #about {
+    width: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 5%;
+  }
+  
+  #about h3 {
+    text-align: left;
+    margin-bottom: -60px;
+  }
+  
+  .sns_icon {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -30px;
+    
+  }
+  
+/*************************** 
+Experience
+****************************/
+  
+  #experience {
+    width: 65%;
+    margin-right: 0%;
+  }
+  
+  #experience h3 {
+    flex-basis: 20%;
+    text-align: right;
+    margin-right: 4%;
+  }
+  
+  #experience div {
+    flex-basis: 65%;
+  }
+  
+/*************************** 
+skills
+****************************/
+  
+  #skills {
+    width: 65%;
+    margin-left: 25%;
+  }
+
+  #skills h5, div {
+    flex-basis: 60%;
+  }
+  
+}
