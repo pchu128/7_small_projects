@@ -1,5 +1,6 @@
 # Movie List
-A simple web application for movie fanatic
+- A simple web application for movie fanatic.
+- Use this app at Codepen.io: https://codepen.io/pchu128/project/editor/AOrvdp
 
 ## Features
 - listing movies from movie api
@@ -9,6 +10,7 @@ A simple web application for movie fanatic
 
 ### Searching
 type the title of the movies in search bar
+
 ### Favorite List
 In index page, press the `+` button on the movie to keep it into favorite list.
 You can checkout the favorite list in `favorite.html`
