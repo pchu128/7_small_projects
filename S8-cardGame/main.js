@@ -7,10 +7,10 @@ const GAME_STATE = {
 }
 
 const Symbols = [   //撲克花色來源網址
-  'https://image.flaticon.com/icons/svg/105/105223.svg', // 黑桃
-  'https://image.flaticon.com/icons/svg/105/105220.svg', // 愛心
-  'https://image.flaticon.com/icons/svg/105/105212.svg', // 方塊
-  'https://image.flaticon.com/icons/svg/105/105219.svg'  // 梅花
+  'https://upload.wikimedia.org/wikipedia/commons/e/e7/Spades.svg', // 黑桃
+  'https://svgsilh.com/svg/2684022.svg', // 愛心
+  'https://svgsilh.com/svg/761859.svg', // 方塊
+  'https://svgsilh.com/svg/33561.svg'  // 梅花
 ]
 
 const view = {    // Pack functions in object, view, to make it easier to be found. Object here serves as a category.
